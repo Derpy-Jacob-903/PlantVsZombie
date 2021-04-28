@@ -1,0 +1,13 @@
+# This is a basic workflow to help you get started with Actions
+
+name: "emsdk"
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mymindstorm/setup-emsdk@v7
+
+      - name: Verify
+        run: emcc -v
