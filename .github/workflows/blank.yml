@@ -11,3 +11,10 @@ jobs:
 
       - name: Verify
         run: emcc -v
+      
+      - name: Comp
+        run: |
+         git clone https://github.com/Derpy-Jacob-903/PlantVsZombie.git
+         emcc tests/hello_world.c
+         
+        
